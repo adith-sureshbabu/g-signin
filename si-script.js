@@ -19,7 +19,3 @@ function signOut() {
 		document.getElementById("si-data").style.display="none";
 	});
 }
-
-//var id_token = googleUser.getAuthResponse().id_token;
-//var token = gapi.auth.getToken();
-//var accessToken = gapi.auth.getToken().access_token;
