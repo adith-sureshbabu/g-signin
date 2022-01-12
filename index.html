@@ -1,40 +1,36 @@
-<html>
-<head>
-<title>Google Sign In</title>
-<link rel="icon" href="/images/logo.png" type="image/png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<meta name="google-signin-client_id" content="692836873677-i8nvjgcnsi9ilh3btptvhgrn6q9mr0dq.apps.googleusercontent.com">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-<script src="si-script.js"></script>
-<style>
-.g-signin2 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -50px;
-	margin-left: -100px;
-}
-.udata {
-	display:none;
-}
-.img-circle {
-	align:center;
-}
-</style>
-</head>
-<body>
-<div id="g-signin" class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-<div id="si-data" class="container udata">
-<br/>
-<img id="p-image" class="img-circle" width="100" height="100" />
-<br /><br />
-<p>Name:</p>
-<p id="u-fname" class="alert alert-info"></p>
-<br />
-<p>Email-ID:</p>
-<p id="u-email" class="alert alert-info"></p>
-<input type="submit" id="signoutbtn" onclick="signOut();" class="btn btn-danger" value="Sign Out" />
-</div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-signin-client_id"
+      content="692836873677-i8nvjgcnsi9ilh3btptvhgrn6q9mr0dq.apps.googleusercontent.com"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Google Sign In</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div id="g-signin" class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <div id="si-data" class="container udata">
+      <br />
+      <img id="p-image" class="img-circle" width="100" height="100" />
+      <br /><br />
+      <p>Name:</p>
+      <p id="u-fname" class="alert alert-info"></p>
+      <br />
+      <p>Email-ID:</p>
+      <p id="u-email" class="alert alert-info"></p>
+      <input type="submit" id="signoutbtn" onclick="signOut();" class="btn btn-danger" value="Sign Out" />
+    </div>
+  </body>
 </html>
